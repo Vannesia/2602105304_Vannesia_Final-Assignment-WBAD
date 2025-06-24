@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ABC Car Rental</h1>
+        <p>Sewa mobil mudah dan cepat</p>
+    </header>
+
+    <main>
+        <section id="car-list">
+            <h2>Daftar Mobil Tersedia</h2>
+            <div class="cars-container" id="cars-container">
+                <!-- Cars will be added dynamically by JavaScript -->
+            </div>
+        </section>
+
+        <section id="customer-form">
+            <h2>Formulir Pelanggan</h2>
+            <form id="rental-form">
+                <div class="form-group">
+                    <label for="customer-name">Nama Pelanggan:</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+                <button type="button" id="calculate-btn">Hitung Total</button>
+            </form>
+        </section>
+
+        <section id="summary">
+            <h2>Ringkasan Sewa</h2>
+            <div id="summary-content">
+                <!-- Summary will be added dynamically -->
+            </div>
+            <button type="button" id="save-btn" disabled>Simpan Pemesanan</button>
+        </section>
+
+        <section id="bookings">
+            <h2>Riwayat Pemesanan</h2>
+            <div id="bookings-list">
+                <!-- Bookings will be added dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ABC Car Rental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
